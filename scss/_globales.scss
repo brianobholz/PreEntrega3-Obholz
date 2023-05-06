@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62,5%; /*1rem = 10px*/
+    font-family: $fuente-principal;
+    
+    }
+    
+    /* Logo header */
+    .logo-header img {
+    max-height: 140px;
+    padding-left: $espacio-grande;
+    }
+    
+    /* Header */
+    .header {
+
+        @include flex-fila-centrado;
+    background-color: $color-header;
+    height: 100px;
+    justify-content: space-between;
+    padding: 5px;
+    }
+    
+    /* Barra navegación */
+    .header nav ul {
+    display: flex;
+    list-style: none;
+    }
+    
+    .header nav ul li a {
+    margin-right: 1rem;
+    display: inline-block;
+    background-color: $color-menu;
+    color: $color-header;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: $fuente-media;
+    border-radius: 4px;
+    padding: 5px;
+    &:hover {
+        background-color: #2E86C1;
+        color: #FFF;
+    }
+    &:active {
+        transform: translateY(2px);
+    }
+    }
+    
+/* CUERPO PÁGINA */
+
+.body {
+    background-color: $color-body;
+    color: $color-menu;
+    }
+
+/* PIE DE PÁGINA */
+
+.container-1 {      /* CONTAINER 1 */
+    background-color: $color-menu;
+    width: 100%;
+    height: 200px;
+    @include flex-fila-centrado;
+    justify-content: space-around;
+    margin-top: $espacio-medio;
+    }
+    
+    .footer-logo img {
+    max-height:200px
+    }
+    
+    .footer-contacto {
+    color: $color-body;
+    padding-top: $espacio-chico;
+    }
+    
+    
+    .footer-contacto ul {
+    list-style: none;
+    margin-top: 15px;
+    }
+    
+    .email {
+    margin-top: 5px;
+    }
+    
+    .footer-direccion {
+    color: $color-body;
+    padding-top: $espacio-chico;
+    }
+    
+    .footer-direccion ul {
+    list-style: none;
+    margin-top: 16px;
+    }
+    
+    .ciudad {
+    margin-top: 5px;
+    }
+    
+    .footer-map {
+    border: none;
+    }
+    
+    
+    .container-2 {      /* CONTAINER 2 */
+    background-color: $color-body;
+    width: 100%;
+    @include flex-fila-centrado;
+    justify-content: space-around;
+    }
+    
+    .copyright {
+    color: $color-menu;
+    font-size: $fuente-chica;
+    }
+    
+    .ir-arriba a {
+    color: $color-menu;
+    text-decoration: none;
+    font-size: $fuente-chica;
+    }
+    
+    @media (max-width: $mobile) {
+
+        /* HEADER RESPONSIVE */
+        
+        /* Logo header */
+        .logo-header img {
+        max-height: 100px;
+        padding-left: $espacio-chicomedio;
+        }
+            
+        /* Header */
+        .header {
+        @include flex-columna;
+        background-color: $color-header;
+        height: auto;
+        justify-content: center;
+        padding: $espacio-chico;
+        }
+            
+        /* Barra navegación */
+        .header nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        }
+            
+        .header nav ul li a {
+        display: inline-block;
+        background-color:$color-menu;
+        color: $color-body;
+        text-decoration: none;
+        font-size: 10px;
+        border-radius: $espacio-medio;
+        padding: $espacio-chico;
+        margin: 5px;
+        }
+        
+        .banner {    /* BANNER*/
+        width: 100%;
+        object-fit: cover;
+        height: 100px;
+        }
+    
+/* FOOTER RESPONSIVE */
+.container-1 {
+    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    
+    .footer-logo img {
+    max-width: 100%;
+    max-height: 130px;
+    }
+    
+    .footer-contacto {
+    padding-top: 0px;
+    text-align: center;
+    font-size: $fuente-chica;
+    }
+    
+    .footer-direccion {
+    padding-top: $espacio-chicomedio;
+    font-size: $fuente-chica;
+    text-align: center;
+    }
+    
+    .footer-contacto ul,
+    .footer-direccion ul {
+    padding-top: 5px;
+    margin-top: 0px;
+    }
+    
+    .footer_map {
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    }
+    
+    .footer_map iframe {
+    align-items: center;
+    width: 70%;
+    margin-left: $espacio-medio;
+    }
+    
+    .container-2 {
+    @include flex-columna;
+    justify-content: center;
+    }
+    
+    .container-2 p {
+    font-size: 10px;
+    }
+    
+    .ir-arriba a {
+    margin-top: 15px;
+    font-size: 10px;
+    }
+    }
+    

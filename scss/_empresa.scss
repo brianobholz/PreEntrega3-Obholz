@@ -1,0 +1,170 @@
+/* PAG 2 EMPRESA */
+
+.nuestra-empresa2 { /* SECTION 1 */
+    @include flex-columna;
+    }
+    
+    .nuestra-empresa2 h2 {
+    font-weight:bold;
+    font-size: $fuente-xl;
+    padding-top: 30px;
+    }
+    
+    .nuestra-empresa2-div {
+    padding-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: $fuente-media;
+    text-align: justify;
+    }
+    
+    .nuestra-historia-container { /* SECTION 2 */
+    @include flex-fila-centrado;
+    }
+    
+    .nuestra-historia {
+    width: 70%;
+    @include flex-columna;
+    text-align: justify;
+    }
+    
+    .nuestra-historia h2 {
+    font-weight:bold;
+    font-size: $fuente-xl;
+    padding-top: 30px;
+    }
+    
+    .nuestra-historia p {
+    padding-top: $espacio-chico;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: $fuente-media;
+    text-align: justify;
+    }
+    
+    .imagen-historia {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 150px;
+    }
+    
+    .mision-vision { /* SECTION 3 */
+    @include flex-columna;
+    }
+    
+    .mision-vision h2 {
+    font-weight:bold;
+    font-size: $fuente-xl;
+    padding-top: 30px;
+    }
+    
+    .mision-vision h3 {
+    font-weight:bold;
+    font-size: $fuente-grande;
+    padding-top: 30px;
+    }
+    
+    .mision-vision p {
+    font-size: $fuente-media;
+    padding-top: 30px;
+    margin-left: $espacio-xl;
+    margin-right: $espacio-xl;
+    }
+
+    /* RESPONSIVE PAGINA 2 EMPRESA */
+
+/* SECTION 1 */
+
+.nuestra-empresa2 {
+@include flex-columna;
+}
+
+.nuestra-empresa2 h2 {
+font-size: $fuente-media;
+padding-top: 15px;
+}
+
+.nuestra-empresa2-div {
+font-size: $fuente-chica;
+margin-left: 15px;
+margin-right: 15px;
+padding-top: 15px;
+}
+
+/* SECTION 2 */
+
+.nuestra-historia-container {
+@include flex-columna;
+}
+
+.nuestra-historia {
+width: 100%;
+max-width: 600px;
+@include flex-columna;
+}
+
+.nuestra-historia h2 {
+font-size: $fuente-media;
+padding-top: 15px;
+}
+
+.nuestra-historia p {
+font-size: 15px;
+margin-left: 15px;
+margin-right: 15px;
+padding-top: 15px;
+text-align: justify;
+}
+
+.imagen-historia {
+display: flex;
+flex-direction: column;
+padding-top: 15px;
+width: 80%;
+margin-right: 0px;
+padding-bottom:15px;
+height: auto;
+}
+
+.imagen-historia img {
+display: flex;
+align-items: center;
+padding-bottom: 0px;
+
+}
+
+.empresa-container-2 {
+@include flex-columna;
+padding-top: 0px;
+}
+
+/* SECTION 3 */
+
+.mision-vision {
+display: flex;
+flex-direction: column;
+}
+
+.mision-vision h2 {
+font-size: $fuente-media;
+padding-top: 16px;
+}
+
+.mision-vision h3 {
+font-size: $fuente-media;
+padding-top: 15px;
+}
+
+.mision-vision p {
+font-size: 15px;
+padding-top: 15px;
+text-align: justify;
+margin-left: 15px;
+margin-right: 15px;
+}
+
+
+
+
+

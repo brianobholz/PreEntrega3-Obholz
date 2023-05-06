@@ -1,0 +1,81 @@
+    /* PAG 1 HOME */
+
+    .banner {    /* BANNER*/
+    width: 100%;
+    object-fit: cover;
+    height: 340px;
+    }
+        
+    .nuestra-empresa { /* SECTION 1 */
+    @include flex-columna;
+    justify-content: center;
+    text-align: justify;
+    }
+    
+    .nuestra-empresa h2 {
+    font-weight:bold;
+    font-size: $fuente-xl;
+    padding-top: 30px;
+    }
+    
+    .nuestra-empresa-div {
+    padding-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-size: $fuente-media;
+    }
+    
+    .nuestro-proposito { /* SECTION 2 */
+    @include flex-columna;
+    }
+    
+    .nuestro-proposito h2 {
+    font-weight:bold;
+    font-size: $fuente-xl;
+    padding-top: 30px;
+    }
+    
+    .nuestro-proposito-div {
+    padding-top: 30px;
+    margin-left: $espacio-xl;
+    margin-right: $espacio-xl;
+    font-size: $fuente-media;
+    }
+    
+    .nuestros-clientes { /* SECTION 3 */
+    @include flex-columna;
+    }
+        
+    .nuestros-clientes h2 {
+    font-weight:bold;
+    font-size: $fuente-xl;
+    padding-top: 30px;
+    }
+        
+    .nuestros-clientes-div {
+    padding-top: 30px;
+    margin-left: $espacio-xl;
+    margin-right: $espacio-xl;
+    font-size: $fuente-media;
+    padding-bottom:30px;
+    }
+
+@media (max-width: $mobile) {
+        
+.nuestra-empresa h2,
+.nuestro-proposito h2,
+.nuestros-clientes h2 {
+font-size: $fuente-media;
+padding-top: 15px;
+}
+
+.nuestra-empresa-div,
+.nuestro-proposito-div,
+.nuestros-clientes-div {
+font-size: 15px;
+margin-left: 15px;
+margin-right: 15px;
+padding-top: 15px;
+text-align: justify;
+}
+}

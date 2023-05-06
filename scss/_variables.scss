@@ -1,0 +1,35 @@
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-fila-centrado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+$color-header: #E5E7E7;
+$color-menu: #09355E;
+$color-body: #E5E7E7;
+$fuente-chica: 14px;
+$fuente-media: 20px;
+$fuente-grande: 30px;
+$fuente-xl: 40px;
+
+/*resolucion de pantallas*/
+$mobile: 320px;
+
+/*margen y paddings*/
+$espacio-chico: 10px;
+$espacio-chicomedio: 20px;
+$espacio-medio: 40px;
+$espacio-grande: 50px;
+$espacio-xl: 90px;
+/*fuente principal*/
+$fuente-principal: 'Montserrat', sans-serif;
+
+
+
+
